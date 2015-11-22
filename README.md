@@ -27,7 +27,7 @@ The data needs to be obtained before the script can be run. To do this:
 The script `run_analysis.R` will tidy the data according to the project instructions (see above). To use it:
 
 1. Put `run_analysis.R` in your working directory (the same one in which the original data was unzipped).
-2. Make sure you have the `rshape2` package installed in R. If not, install it.
+2. Make sure you have the `reshape2` package installed in R. If not, install it.
 3. From your working directory, run the script using the command `source(“run_analysis.R”)`.
 
 ## The Output
@@ -39,7 +39,7 @@ Then it writes this data frame out to the file `TidyData.txt` in the working dir
 
 The tidy data can be read into R using the command `read.table(“TidyData.txt”, header = TRUE)`.
 
-Please note that the tidy data created by `run_analysis.R` is in a wide format. Each row corresponds to a unique subject, activity pair, and the rest of the row contains the averages of the feature measurements for that subject, activity pair. The data is tidy because each variable occurs in a column, each observation occurs in a row, and the single table in the result has only one kind of observational unit.
+Please note that the tidy data created by `run_analysis.R` is in a wide format. Each row corresponds to a unique subject, activity pair, and the rest of the row contains the averages of the feature measurements for that subject, activity pair. The data is tidy because each variable occurs in a column, each observation occurs in a row, and the single table has only one kind of observational unit.
 
 For more information on the transformations that `run_analysis.R` applies to the original data and for more information on the variables used in the resultant tidy data set, please see the Code Book, which is included as `CodeBook.md` in this repository.
 
